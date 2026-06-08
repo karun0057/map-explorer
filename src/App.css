@@ -1,0 +1,25 @@
+.app {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+/* Mobile: stack vertically */
+@media (max-width: 768px) {
+  .app {
+    flex-direction: column;
+  }
+
+  .address-list {
+    width: 100% !important;
+    min-width: unset !important;
+    height: 40vh;
+    border-right: none !important;
+    border-bottom: 1px solid #e8eaed;
+  }
+
+  .map-view {
+    height: 60vh;
+  }
+}

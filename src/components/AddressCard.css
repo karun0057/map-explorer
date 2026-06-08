@@ -1,0 +1,123 @@
+.address-card {
+  display: flex;
+  align-items: stretch;
+  background: #fff;
+  border-radius: 12px;
+  border: 1.5px solid #e8eaed;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: box-shadow 0.15s ease, border-color 0.15s ease, transform 0.1s ease;
+  overflow: hidden;
+  outline: none;
+}
+
+.address-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  border-color: #c5cae9;
+  transform: translateY(-1px);
+}
+
+.address-card:focus-visible {
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.15);
+}
+
+.address-card--selected {
+  border-color: #4f46e5;
+  background: #f5f3ff;
+  box-shadow: 0 4px 16px rgba(79, 70, 229, 0.15);
+}
+
+.address-card__counter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  flex-shrink: 0;
+  font-size: 11px;
+  font-weight: 700;
+  color: #9ca3af;
+  letter-spacing: 0.3px;
+  border-right: 1.5px solid #f3f4f6;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.address-card--selected .address-card__counter {
+  color: #4f46e5;
+  border-right-color: #e0e7ff;
+}
+
+.address-card__body {
+  padding: 14px 16px;
+  flex: 1;
+  min-width: 0;
+}
+
+.address-card__name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1a1a2e;
+  margin-bottom: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.address-card--selected .address-card__name {
+  color: #4f46e5;
+}
+
+.address-card__address {
+  font-size: 12px;
+  color: #6b7280;
+  line-height: 1.4;
+  margin-bottom: 8px;
+}
+
+.address-card__status {
+  display: flex;
+}
+
+.badge {
+  font-size: 11px;
+  font-weight: 500;
+  padding: 2px 8px;
+  border-radius: 999px;
+}
+
+.badge--loading {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.badge--error {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.badge--ok {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.badge--user {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+.address-card--user .address-card__indicator {
+  background: #2563eb;
+}
+
+.address-card--user.address-card--selected .address-card__indicator {
+  background: #1d4ed8;
+}
+
+.address-card--user.address-card--selected {
+  border-color: #2563eb;
+  background: #eff6ff;
+}
+
+.address-card--user.address-card--selected .address-card__name {
+  color: #1d4ed8;
+}

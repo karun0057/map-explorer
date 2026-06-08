@@ -1,0 +1,66 @@
+.address-list {
+  width: 360px;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  background: #f8f9fc;
+  border-right: 1px solid #e8eaed;
+  height: 100%;
+  overflow: hidden;
+}
+
+.address-list__header {
+  padding: 24px 20px 16px;
+  background: #fff;
+  border-bottom: 1px solid #e8eaed;
+  flex-shrink: 0;
+}
+
+.address-list__title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin: 0 0 4px;
+  letter-spacing: -0.3px;
+}
+
+.address-list__subtitle {
+  font-size: 13px;
+  color: #9ca3af;
+  margin: 0 0 12px;
+}
+
+.address-list__progress {
+  height: 3px;
+  background: #e8eaed;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.address-list__progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #4f46e5, #7c3aed);
+  border-radius: 999px;
+  transition: width 0.4s ease;
+}
+
+.address-list__scroll {
+  flex: 1;
+  overflow-y: auto;
+  padding: 16px 16px 24px;
+  scrollbar-width: thin;
+  scrollbar-color: #d1d5db transparent;
+}
+
+.address-list__scroll::-webkit-scrollbar {
+  width: 4px;
+}
+
+.address-list__scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.address-list__scroll::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 999px;
+}
